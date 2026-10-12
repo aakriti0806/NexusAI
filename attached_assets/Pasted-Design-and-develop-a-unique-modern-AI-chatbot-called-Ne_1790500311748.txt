@@ -1,0 +1,137 @@
+Design and develop a unique modern AI chatbot called NexusAI, powered by Google Gemini 2.5 Flash, with both text and voice interaction.
+
+The chatbot should work as an intelligent personal assistant rather than only a question-answering chatbot. Users should be able to type or speak natural-language commands such as:
+
+• “Open YouTube”
+• “Play my favorite song on YouTube”
+• “Open Google”
+• “Search the web for the latest AI news”
+• “What is the weather today?”
+• “Open this website”
+• “Set a reminder for 6 PM”
+• “Find resources for learning Python”
+• “Give me a 30-day Data Analytics study plan”
+
+Voice Interaction
+
+Add a large animated microphone button in the chat interface. When the user taps the microphone, show a live listening state with an animated waveform and microphone glow.
+
+Voice flow:
+
+User speaks → Speech recognition → Gemini understands intent → Execute appropriate action → Return result → Show confirmation.
+
+For example:
+
+User: “Play Arijit Singh songs on YouTube.”
+
+Assistant:
+“Sure! I’ll open YouTube and search for Arijit Singh songs.”
+
+Then display a clickable YouTube result card with thumbnail, title, platform icon, and an Open / Play button.
+
+Intelligent Action System
+
+The AI should distinguish between normal conversation and actionable commands.
+
+Supported action categories:
+
+Open website
+Open YouTube
+Search web
+Play music
+Open a URL
+Weather lookup
+Set reminder
+Study-plan generation
+Resource search
+General AI conversation
+
+Every executed action should be clearly shown inside the conversation as an action card with status such as:
+“Opening YouTube…”
+“Searching…”
+“Playing music…”
+“Website opened successfully.”
+
+UI Layout
+
+Create a premium, modern interface with:
+
+LEFT SIDEBAR:
+• NexusAI logo
+• New Chat
+• Chat History
+• Voice Commands
+• Music & Media
+• Links & Tools
+• Settings
+• User profile
+
+CENTER:
+• Gemini-style conversation interface
+• AI avatar
+• User and assistant messages
+• Markdown/code support
+• Streaming response animation
+• Voice waveform
+• Large microphone button
+• Text input
+• Attachment button
+• Send button
+
+RIGHT PANEL:
+• Quick Actions
+• Open YouTube
+• Search Web
+• Open Website
+• Check Weather
+• Set Reminder
+• Study Plan
+• Recent Topics
+
+Unique Voice UI
+
+Instead of a normal microphone icon only, create a glowing circular AI voice orb that changes state:
+
+Idle → Listening → Processing → Responding → Completed.
+
+Use animated sound waves around the orb while the assistant is listening or speaking.
+
+Music Experience
+
+When a music command is detected, display a dedicated music result card containing:
+• Song thumbnail
+• Song title
+• Artist
+• YouTube/platform icon
+• Play button
+• Open link button
+• Mini progress/player controls
+
+Visual Style
+
+Use a futuristic but clean design combining:
+• Deep navy / white surfaces
+• Blue-purple gradient accents
+• Soft glassmorphism
+• Rounded cards
+• Subtle shadows
+• Smooth Framer Motion animations
+• Minimal professional typography
+• Responsive desktop and mobile layouts
+
+The final interface should feel like a combination of Gemini + personal AI assistant + voice-controlled productivity dashboard, while maintaining a unique NexusAI identity.
+
+Technical Compatibility
+
+Preserve the existing architecture:
+Frontend: React 19 + Vite + Tailwind CSS + shadcn/ui
+Backend: Node.js + Express
+AI: @google/genai with Gemini 2.5 Flash
+Database: PostgreSQL + Drizzle ORM
+Authentication: Clerk
+Streaming: Server-Sent Events
+Search: Google Search grounding
+
+Integrate the voice-command/action system without breaking the existing chat, authentication, conversation history, streaming, or search functionality.
+
+Important: Never execute an action silently. Before or immediately after an external action, clearly communicate what the assistant is doing and provide the corresponding clickable result/link when available.

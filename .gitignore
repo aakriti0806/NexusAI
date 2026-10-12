@@ -1,0 +1,45 @@
+@"
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Replit files
+.replit
+replit.nix
+.replitignore
+replit.md
+.local/
+.agents/
+.config/
+.cache/
+.upm/
+
+# Misc
+coverage/
+tmp/
+temp/
+"@ | Set-Content -Encoding utf8 .gitignore
